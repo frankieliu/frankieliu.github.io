@@ -1,0 +1,41 @@
+#+STARTUP: showall indent hidestars
+#+BEGIN_COMMENT
+.. title:  : vimgolf : One number per line
+.. slug: vimgolf-one-number-per-line
+.. date: 2018-01-18 11:02:17 UTC-08:00
+.. tags: vim
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* Solutions common patterns
+** Link
+vimgolf put 56fb2e75ccffcc0009026473
+
+** Start file
+- One number per line -
+-----------------------
+2,3,5,7,
+11,13,17,
+19,23,29,
+
+** End file
+2
+3
+5
+7
+11
+13
+17
+19
+23
+29
+
+** Deleting the first two lines
+1. dj : d{motion} delete, j moves down one line
+2. 2D : D delete the character under the cursor until the end of line
+   and [count]-1 more lines
+** Joining the lines
+1. JxJx : Join and delete the extra character twice
