@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+ <url>
+  <loc>http://www.frankliu.org/</loc>
+  <lastmod>2018-01-18T19:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.frankliu.org/2018/</loc>
+  <lastmod>2018-01-18T19:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.frankliu.org/archive.html</loc>
+  <lastmod>2018-01-18T19:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.frankliu.org/categories/</loc>
+  <lastmod>2018-01-18T19:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.frankliu.org/categories/vim/</loc>
+  <lastmod>2018-01-18T19:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.frankliu.org/galleries/</loc>
+  <lastmod>2018-01-18T19:45:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.frankliu.org/listings/</loc>
+  <lastmod>2018-01-18T19:45:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.frankliu.org/posts/vimgolf-one-number-per-line/</loc>
+  <lastmod>2018-01-18T19:52:00Z</lastmod>
+ </url>
+</urlset>
