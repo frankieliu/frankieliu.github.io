@@ -3,13 +3,19 @@ VIRTUAL_ENV := nikola
 default: help
 
 $(VIRTUAL_ENV):
-	source activate $(VIRTUAL_ENV)
+	@echo "source activate $(VIRTUAL_ENV)"
 
 help:
-	@echo "Enter nikola virtual env:"
+	@echo "# Enter nikola virtual env:"
 	@echo "make $(VIRTUAL_ENV)"
 	@echo "Initialize the current directory"
 	@echo "make init"
+
+post:
+	nikola new_post -e -f orgmode
+
+post_formats:
+	nikola new_post -F
 
 init:
 	nikola init test
