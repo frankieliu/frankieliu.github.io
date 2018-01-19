@@ -1,0 +1,21 @@
+#+BEGIN_COMMENT
+.. title: git head and branches
+.. slug: git-head-and-branches
+.. date: 2018-01-19 08:11:56 UTC-08:00
+.. tags: git,mathjax
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* =origin= is a local alias to a remote repository
+
+1. ~git push [origin|<URL>] <branch>~ pushes changes to a particular remote repository
+2. ~git remote -v~ find out information about remote
+3. ~git remote show origin~ shows the origin
+4. ~git remote add origin <URL>~ sets an origin
+5. ~git remote rename origin <new_name>~ renames the origin
+
+* =branch=
+1. $x=x+y$

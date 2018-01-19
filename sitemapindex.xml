@@ -6,8 +6,20 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>http://www.frankliu.org/categories/git-mathjax.xml</loc>
+  <lastmod>2018-01-19T16:57:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.frankliu.org/categories/git.xml</loc>
+  <lastmod>2018-01-19T17:14:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.frankliu.org/categories/mathjax.xml</loc>
+  <lastmod>2018-01-19T17:14:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://www.frankliu.org/categories/vim.xml</loc>
-  <lastmod>2018-01-18T19:52:00Z</lastmod>
+  <lastmod>2018-01-19T16:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.frankliu.org/galleries/rss.xml</loc>
@@ -15,10 +27,10 @@
  </sitemap>
  <sitemap>
   <loc>http://www.frankliu.org/rss.xml</loc>
-  <lastmod>2018-01-18T19:52:00Z</lastmod>
+  <lastmod>2018-01-19T17:14:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.frankliu.org/sitemap.xml</loc>
-  <lastmod>2018-01-18T19:52:00Z</lastmod>
+  <lastmod>2018-01-19T17:14:00Z</lastmod>
  </sitemap>
 </sitemapindex>
