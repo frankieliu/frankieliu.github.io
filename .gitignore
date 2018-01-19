@@ -5,6 +5,6 @@ _site
 __pycache__
 cache
 output
-.doit.db
+.doit.db*
 _env/
-
+*~
