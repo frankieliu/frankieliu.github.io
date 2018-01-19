@@ -26,4 +26,19 @@
 
 * =head= is a pointer to a branch
 
+* =alias=
+1. Set an alias for an alias command
+
+#+BEGIN_SRC bash
+git config --global alias.alias "config --get-regexp ^alias\."
+#+END_SRC
+
+2. ~git alias~ : use the alias command
+
+3. Set an alias for alog
+
+#+BEGIN_SRC bash
+git config --global alias.alog "log --graph --oneline --all --decorate"
+#+END_SRC
+
 * [[https://github.com/tj/git-extras][git-extras]]
