@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://www.frankliu.org/</loc>
-  <lastmod>2018-01-18T19:52:00Z</lastmod>
+  <lastmod>2018-01-19T18:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.frankliu.org/2018/</loc>
@@ -19,11 +19,7 @@
  </url>
  <url>
   <loc>http://www.frankliu.org/categories/</loc>
-  <lastmod>2018-01-19T17:14:00Z</lastmod>
- </url>
- <url>
-  <loc>http://www.frankliu.org/categories/git-mathjax/</loc>
-  <lastmod>2018-01-19T16:57:00Z</lastmod>
+  <lastmod>2018-01-19T17:19:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.frankliu.org/categories/git/</loc>
@@ -36,14 +32,6 @@
  <url>
   <loc>http://www.frankliu.org/categories/vim/</loc>
   <lastmod>2018-01-18T19:52:00Z</lastmod>
- </url>
- <url>
-  <loc>http://www.frankliu.org/galleries/</loc>
-  <lastmod>2018-01-18T19:45:00Z</lastmod>
- </url>
- <url>
-  <loc>http://www.frankliu.org/listings/</loc>
-  <lastmod>2018-01-18T19:45:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.frankliu.org/posts/git-head-and-branches/</loc>

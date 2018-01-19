@@ -11,11 +11,19 @@
 
 * =origin= is a local alias to a remote repository
 
-1. ~git push [origin|<URL>] <branch>~ pushes changes to a particular remote repository
-2. ~git remote -v~ find out information about remote
-3. ~git remote show origin~ shows the origin
-4. ~git remote add origin <URL>~ sets an origin
-5. ~git remote rename origin <new_name>~ renames the origin
+1. ~git push [origin|<URL>] <branch>~ pushes changes to a particular
+   remote repository
+2. ~git remote~
+3. ~git remote -v~ find out information about remote
+4. ~git remote show origin~ shows the origin
+5. ~git remote add origin <URL>~ sets an origin
+6. ~git remote rename origin <new_name>~ renames the origin
 
 * =branch=
-1. $x=x+y$
+1. ~git branch -a~ show all branches
+2. ~git diff origin/master..master~ show differences between local
+   master and origin's master
+
+* =head= is a pointer to a branch
+
+* [[https://github.com/tj/git-extras][git-extras]]
