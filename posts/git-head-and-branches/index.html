@@ -134,7 +134,36 @@ remote repository
 <div class="outline-text-2" id="text-2">
 <ol class="org-ol">
 <li>
+<code>git branch &lt;branch name&gt;</code> create a branch
+</li>
+<li>
+<code>git checkout &lt;branch name&gt;</code> move HEAD to that branch
+</li>
+<li>
+<code>git checkout -b &lt;branch name&gt;</code> create branch and move HEAD to it
+</li>
+<li>
+<code>git checkout master</code> return to the master branch
+</li>
+<li>
+<code>git merge &lt;branch name&gt;</code> merges checked out branch (typically
+master) with another branch
+</li>
+<li>
+<code>git branch -d &lt;branch name&gt;</code> removes a branch
+</li>
+<li>
+<code>git mergetool</code> optional tool to visually merge
+</li>
+<li>
 <code>git branch -a</code> show all branches
+</li>
+<li>
+<code>git branch -v</code> see last commit
+</li>
+<li>
+<code>git branch --no-merged</code> see the branches that have not merged
+with checked out branch (typically master)
 </li>
 <li>
 <code>git diff origin/master..master</code> show differences between local
@@ -146,7 +175,19 @@ master and origin's master
 
 <div id="outline-container-sec-3" class="outline-2">
 <h2 id="sec-3">
-<code>head</code> is a pointer to a branch</h2>
+<code>HEAD</code> <code>@</code> is a pointer to a branch</h2>
+<div class="outline-text-2" id="text-3">
+<ol class="org-ol">
+<li><img src="../../images/git/git-graph.svg" alt="Difference between carot and tilde"></li>
+</ol>
+<p>
+Image from <a href="http://www.paulboxley.com/blog/2011/06/git-caret-and-tilde">paulboxley</a>.
+</p>
+<ol class="org-ol">
+<li>The <code>@</code> at-sign without leading branch/reference is the same as <code>HEAD</code>.
+</li>
+</ol>
+</div>
 </div>
 
 <div id="outline-container-sec-4" class="outline-2">
@@ -173,7 +214,54 @@ master and origin's master
 </div>
 
 <div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><a href="https://github.com/tj/git-extras">git-extras</a></h2>
+<h2 id="sec-5">Unstaging</h2>
+<div class="outline-text-2" id="text-5">
+<ol class="org-ol">
+<li>Suppose you did the following <code>git add -A</code>, i.e. added all modifications
+</li>
+<li>
+<code>git reset HEAD &lt;file&gt;</code> you can unstage them individually
+</li>
+<li>
+<code>git reset</code> or unstage all the modifications
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">Undoing things</h2>
+<div class="outline-text-2" id="text-6">
+<ol class="org-ol">
+<li>
+<a href="https://sethrobertson.github.io/GitFixUm/fixup.html">fix human errors</a>
+</li>
+<li>=git commit -m "some typo"= want to undo this commit
+</li>
+<li>
+<code>git reset HEAD~</code> unstages your commit
+</li>
+<li>make corrections
+</li>
+<li>
+<code>git add ...</code> stage them
+</li>
+<li>
+<code>git commit -c ORIG_HEAD</code> allows you to edit the old commit message
+<code>ORIG_HEAD</code> is the original head
+</li>
+<li>
+<code>git revert HEAD</code> undoes a public commit
+</li>
+<li>
+<a href="https://stackoverflow.com/questions/927358/how-to-undo-the-most-recent-commits-in-git?page=1&amp;tab=votes#tab-top">nice read</a>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><a href="https://github.com/tj/git-extras">git-extras</a></h2>
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">

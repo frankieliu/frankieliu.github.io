@@ -20,11 +20,26 @@
 6. ~git remote rename origin <new_name>~ renames the origin
 
 * =branch=
-1. ~git branch -a~ show all branches
-2. ~git diff origin/master..master~ show differences between local
-   master and origin's master
+1. ~git branch <branch name>~ create a branch
+2. ~git checkout <branch name>~ move HEAD to that branch
+3. ~git checkout -b <branch name>~ create branch and move HEAD to it
+4. ~git checkout master~ return to the master branch
+5. ~git merge <branch name>~ merges checked out branch (typically
+   master) with another branch
+6. ~git branch -d <branch name>~ removes a branch
+7. ~git mergetool~ optional tool to visually merge
+8. ~git branch -a~ show all branches
+9. ~git branch -v~ see last commit
+10. ~git branch --no-merged~ see the branches that have not merged
+    with checked out branch (typically master)
+11. ~git diff origin/master..master~ show differences between local
+    master and origin's master
 
-* =head= is a pointer to a branch
+* =HEAD= =@= is a pointer to a branch
+1. [[img-url:/images/git/git-graph.svg][Difference between carot and tilde]]
+
+Image from [[http://www.paulboxley.com/blog/2011/06/git-caret-and-tilde][paulboxley]].
+2. The =@= at-sign without leading branch/reference is the same as =HEAD=.
 
 * =alias=
 1. Set an alias for an alias command
@@ -40,5 +55,21 @@ git config --global alias.alias "config --get-regexp ^alias\."
 #+BEGIN_SRC bash
 git config --global alias.alog "log --graph --oneline --all --decorate"
 #+END_SRC
+
+* Unstaging
+1. Suppose you did the following =git add -A=, i.e. added all modifications
+2. =git reset HEAD <file>= you can unstage them individually
+3. =git reset= or unstage all the modifications
+
+* Undoing things
+1. [[https://sethrobertson.github.io/GitFixUm/fixup.html][fix human errors]]
+2. =git commit -m "some typo"= want to undo this commit
+3. =git reset HEAD~= unstages your commit
+4. make corrections
+5. =git add ...= stage them
+6. =git commit -c ORIG_HEAD= allows you to edit the old commit message
+   =ORIG_HEAD= is the original head
+7. =git revert HEAD= undoes a public commit
+8. [[https://stackoverflow.com/questions/927358/how-to-undo-the-most-recent-commits-in-git?page=1&tab=votes#tab-top][nice read]]
 
 * [[https://github.com/tj/git-extras][git-extras]]
