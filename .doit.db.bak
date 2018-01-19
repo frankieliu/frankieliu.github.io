@@ -100,3 +100,4 @@
 'render_taxonomies:output/categories/git-mathjax/index.html', (114688, 2269)
 'render_taxonomies:output/categories/mathjax.xml', (117248, 547)
 'render_taxonomies:output/categories/mathjax/index.html', (118272, 2268)
+'copy_files:output/CNAME', (120832, 230)
