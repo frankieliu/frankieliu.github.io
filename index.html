@@ -10,7 +10,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="http://www.frankliu.org/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/git-head-and-branches/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/org-mode-image-location/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -63,7 +63,66 @@
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/git-head-and-branches/" class="u-url">git head and branches</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/org-mode-image-location/" class="u-url">org-mode image location</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Frankie Liu
+            </span></p>
+            <p class="dateline"><a href="posts/org-mode-image-location/" rel="bookmark"><time class="published dt-published" datetime="2018-01-19T17:38:47-08:00" title="2018-01-19 17:38">2018-01-19 17:38</time></a></p>
+                <p class="commentline">
+        
+    <a href="posts/org-mode-image-location/#disqus_thread" data-disqus-identifier="cache/posts/org-mode-image-location.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p>
+I did not like the limited options offered by the orgmode plugin that
+came with nikola.  It suggests using <code>img-url:</code> link which does not
+allow me to add <code>ATTR_HTML</code> or a <code>CAPTION</code> that comes nicely with
+<code>org-export</code>.
+</p>
+
+<p>
+Let's add an image here: 
+</p>
+
+
+<div class="figure">
+<p><img src="images/org-mode/cannon_js.png" alt="cat/spider image" title="Action!" align="center" width="200"></p>
+<p><span class="figure-number">Figure 1:</span> Image from cannon.js</p>
+</div>
+
+<p>
+This was added as
+</p>
+
+<pre class="example">
+#+CAPTION: Image from cannon.js
+#+ATTR_HTML: :alt cat/spider image :title Action! :align center :width 200
+[[../../images/org-mode/cannon_js.png]]
+</pre>
+
+<p>
+Now, we also create a symbolic link to <code>files/images</code> in order to
+point the final location of the <code>images/</code> directory that should be
+added to <code>files/</code> directory.  The <code>images/</code> final output location will
+be at <code>/</code> which is located two back references from the <code>posts</code>
+directory.
+</p>
+
+<p>
+Adding a symbolic link in the <code>source</code> branch, is useful.
+</p>
+
+<div class="highlight"><pre><span></span>cd $nikola_root
+mkdir -p files/images/org-mode
+# move cannon_js.png into this directory
+ln -s $(pwd)/files/images ../images
+</pre></div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/git-head-and-branches/" class="u-url">git head and branches</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Frankie Liu
