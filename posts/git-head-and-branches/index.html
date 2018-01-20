@@ -130,8 +130,25 @@ remote repository
 </div>
 
 <div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><code>branch</code></h2>
+<h2 id="sec-2">
+<code>HEAD</code> <code>@</code> is a pointer to a branch</h2>
 <div class="outline-text-2" id="text-2">
+<ol class="org-ol">
+<li><img src="../../images/git/git-graph.svg" alt="Difference between carot and tilde"></li>
+</ol>
+<p>
+Image from <a href="http://www.paulboxley.com/blog/2011/06/git-caret-and-tilde">paulboxley</a>.
+</p>
+<ol class="org-ol">
+<li>The <code>@</code> at-sign without leading branch/reference is the same as <code>HEAD</code>.
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><code>branch</code></h2>
+<div class="outline-text-2" id="text-3">
 <ol class="org-ol">
 <li>
 <code>git branch &lt;branch name&gt;</code> create a branch
@@ -162,6 +179,9 @@ master) with another branch
 <code>git branch -v</code> see last commit
 </li>
 <li>
+<code>git branch -vv</code> see tracking information
+</li>
+<li>
 <code>git branch --no-merged</code> see the branches that have not merged
 with checked out branch (typically master)
 </li>
@@ -173,26 +193,73 @@ master and origin's master
 </div>
 </div>
 
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3">
-<code>HEAD</code> <code>@</code> is a pointer to a branch</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Working with remote references</h2>
+<div class="outline-text-2" id="text-4">
 <ol class="org-ol">
-<li><img src="../../images/git/git-graph.svg" alt="Difference between carot and tilde"></li>
-</ol>
-<p>
-Image from <a href="http://www.paulboxley.com/blog/2011/06/git-caret-and-tilde">paulboxley</a>.
-</p>
-<ol class="org-ol">
-<li>The <code>@</code> at-sign without leading branch/reference is the same as <code>HEAD</code>.
+<li>
+<code>git ls-remote</code>
+</li>
+<li>
+<code>git ls-remote origin master</code>
+</li>
+<li>
+<code>git fetch origin</code>
+</li>
+<li>
+<code>git remote add &lt;remote_name&gt;</code>
+</li>
+<li>
+<code>git fetch &lt;remote_name&gt;</code>
+</li>
+<li>
+<code>git push origin &lt;branch_name&gt;</code> shortcut for
+<code>git push origin &lt;bn&gt;:&lt;bn&gt;</code>
+</li>
+<li>
+<code>git merge origin/&lt;bn&gt;</code> merges current working branch
+</li>
+<li>
+<code>git checkout -b &lt;bn&gt; origin/&lt;bn&gt;</code> create local branch <code>&lt;bn&gt;</code> based
+off <code>origin/&lt;bn&gt;</code>
+</li>
+<li>
+<code>git checkout --track origin/&lt;bn&gt;</code> shorthand for the above
+</li>
+<li>
+<code>git checkout &lt;bn&gt;</code> shorthand for the above if <code>&lt;bn&gt;</code> exists on origin
+</li>
+<li>
+<code>git push origin --delete &lt;bn&gt;</code> delete a remote branch
 </li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><code>alias</code></h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">Workflow</h2>
+<div class="outline-text-2" id="text-5">
+<ol class="org-ol">
+<li>
+<code>git checkout -b &lt;myworkingbranch&gt; --track origin/master</code> create a
+local branch
+</li>
+<li>~git config –global alias.nb "!git checkout –track $(git config
+branch.$(git rev-parge –abbrev-ref HEAD).remote)/$(git rev-parse –abrev-ref HEAD) -b"~
+</li>
+<li>
+<code>git nb foobar</code>
+</li>
+<li>
+<a href="https://hub.github.com/">hub</a>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><code>alias</code></h2>
+<div class="outline-text-2" id="text-6">
 <ol class="org-ol">
 <li>Set an alias for an alias command
 </li>
@@ -213,9 +280,9 @@ Image from <a href="http://www.paulboxley.com/blog/2011/06/git-caret-and-tilde">
 </div>
 </div>
 
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5">Unstaging</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">Unstaging</h2>
+<div class="outline-text-2" id="text-7">
 <ol class="org-ol">
 <li>Suppose you did the following <code>git add -A</code>, i.e. added all modifications
 </li>
@@ -229,14 +296,14 @@ Image from <a href="http://www.paulboxley.com/blog/2011/06/git-caret-and-tilde">
 </div>
 </div>
 
-<div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6">Undoing things</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8">Undoing things</h2>
+<div class="outline-text-2" id="text-8">
 <ol class="org-ol">
 <li>
 <a href="https://sethrobertson.github.io/GitFixUm/fixup.html">fix human errors</a>
 </li>
-<li>=git commit -m "some typo"= want to undo this commit
+<li>~git commit -m "some typo"~ want to undo this commit
 </li>
 <li>
 <code>git reset HEAD~</code> unstages your commit
@@ -256,12 +323,15 @@ Image from <a href="http://www.paulboxley.com/blog/2011/06/git-caret-and-tilde">
 <li>
 <a href="https://stackoverflow.com/questions/927358/how-to-undo-the-most-recent-commits-in-git?page=1&amp;tab=votes#tab-top">nice read</a>
 </li>
+<li>
+<a href="https://stackoverflow.com/questions/1223354/undo-git-pull-how-to-bring-repos-to-old-state">another stackoverflow</a>
+</li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7"><a href="https://github.com/tj/git-extras">git-extras</a></h2>
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><a href="https://github.com/tj/git-extras">git-extras</a></h2>
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
