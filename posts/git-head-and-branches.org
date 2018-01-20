@@ -22,6 +22,7 @@
 * =HEAD= =@= is a pointer to a branch
 1. [[img-url:/images/git/git-graph.svg][Difference between carot and tilde]]
 
+#+ATTR_HTML: width="200"
 Image from [[http://www.paulboxley.com/blog/2011/06/git-caret-and-tilde][paulboxley]].
 2. The =@= at-sign without leading branch/reference is the same as =HEAD=.
 
