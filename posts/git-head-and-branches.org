@@ -19,6 +19,12 @@
 5. ~git remote add origin <URL>~ sets an origin
 6. ~git remote rename origin <new_name>~ renames the origin
 
+* =HEAD= =@= is a pointer to a branch
+1. [[img-url:/images/git/git-graph.svg][Difference between carot and tilde]]
+
+Image from [[http://www.paulboxley.com/blog/2011/06/git-caret-and-tilde][paulboxley]].
+2. The =@= at-sign without leading branch/reference is the same as =HEAD=.
+
 * =branch=
 1. ~git branch <branch name>~ create a branch
 2. ~git checkout <branch name>~ move HEAD to that branch
@@ -30,16 +36,34 @@
 7. ~git mergetool~ optional tool to visually merge
 8. ~git branch -a~ show all branches
 9. ~git branch -v~ see last commit
-10. ~git branch --no-merged~ see the branches that have not merged
+10. ~git branch -vv~ see tracking information
+11. ~git branch --no-merged~ see the branches that have not merged
     with checked out branch (typically master)
-11. ~git diff origin/master..master~ show differences between local
+12. ~git diff origin/master..master~ show differences between local
     master and origin's master
 
-* =HEAD= =@= is a pointer to a branch
-1. [[img-url:/images/git/git-graph.svg][Difference between carot and tilde]]
+* Working with remote references
+1. ~git ls-remote~
+2. ~git ls-remote origin master~
+3. ~git fetch origin~
+4. ~git remote add <remote_name>~
+5. ~git fetch <remote_name>~
+6. ~git push origin <branch_name>~ shortcut for
+   ~git push origin <bn>:<bn>~
+7. ~git merge origin/<bn>~ merges current working branch
+8. ~git checkout -b <bn> origin/<bn>~ create local branch ~<bn>~ based
+   off ~origin/<bn>~
+9. ~git checkout --track origin/<bn>~ shorthand for the above
+10. ~git checkout <bn>~ shorthand for the above if ~<bn>~ exists on origin
+11. ~git push origin --delete <bn>~ delete a remote branch
 
-Image from [[http://www.paulboxley.com/blog/2011/06/git-caret-and-tilde][paulboxley]].
-2. The =@= at-sign without leading branch/reference is the same as =HEAD=.
+* Workflow
+1. ~git checkout -b <myworkingbranch> --track origin/master~ create a
+   local branch
+2. ~git config --global alias.nb "!git checkout --track $(git config
+   branch.$(git rev-parge --abbrev-ref HEAD).remote)/$(git rev-parse --abrev-ref HEAD) -b"~
+3. ~git nb foobar~
+4. [[https://hub.github.com/][hub]]
 
 * =alias=
 1. Set an alias for an alias command
@@ -63,7 +87,7 @@ git config --global alias.alog "log --graph --oneline --all --decorate"
 
 * Undoing things
 1. [[https://sethrobertson.github.io/GitFixUm/fixup.html][fix human errors]]
-2. =git commit -m "some typo"= want to undo this commit
+2. ~git commit -m "some typo"~ want to undo this commit
 3. =git reset HEAD~= unstages your commit
 4. make corrections
 5. =git add ...= stage them
@@ -71,5 +95,6 @@ git config --global alias.alog "log --graph --oneline --all --decorate"
    =ORIG_HEAD= is the original head
 7. =git revert HEAD= undoes a public commit
 8. [[https://stackoverflow.com/questions/927358/how-to-undo-the-most-recent-commits-in-git?page=1&tab=votes#tab-top][nice read]]
+9. [[https://stackoverflow.com/questions/1223354/undo-git-pull-how-to-bring-repos-to-old-state][another stackoverflow]]
 
 * [[https://github.com/tj/git-extras][git-extras]]
