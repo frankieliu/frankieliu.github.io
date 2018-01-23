@@ -9,3 +9,7 @@ output
 .doit.db.*
 _env/
 *~
+.doit.db.bak
+.doit.db.dat
+.doit.db.dir
+

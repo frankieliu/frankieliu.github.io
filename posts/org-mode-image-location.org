@@ -34,7 +34,9 @@ added to =files/= directory.  The =images/= final output location will
 be at =/= which is located two back references from the =posts=
 directory.
 
-Adding a symbolic link in the =source= branch, is useful.
+Adding a symbolic link in the =source= branch allows one to visit the
+link in org-mode, while at the same time point to the correct output
+directory.
 
 #+BEGIN_SRC bash
 cd $nikola_root
