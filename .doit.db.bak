@@ -112,3 +112,6 @@
 'render_taxonomies:output/categories/org-mode-nikola/index.html', (152576, 2282)
 'render_taxonomies:output/categories/org-mode-nikola.xml', (155136, 561)
 'copy_files:output/images/org-mode/cannon_js.png', (156160, 281)
+'render_pages:output/posts/vimgolf-simple-practical-and-common/index.html', (156672, 6290)
+'render_sources:output/posts/vimgolf-simple-practical-and-common/index.org', (166400, 297)
+'render_posts:cache/posts/vimgolf-simple-practical-and-common.html', (166912, 436)
