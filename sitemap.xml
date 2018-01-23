@@ -15,11 +15,11 @@
  </url>
  <url>
   <loc>http://www.frankliu.org/archive.html</loc>
-  <lastmod>2018-01-20T01:38:00Z</lastmod>
+  <lastmod>2018-01-23T07:10:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.frankliu.org/categories/</loc>
-  <lastmod>2018-01-20T01:40:00Z</lastmod>
+  <lastmod>2018-01-20T02:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.frankliu.org/categories/git/</loc>
@@ -32,10 +32,6 @@
  <url>
   <loc>http://www.frankliu.org/categories/org-mode-nikola/</loc>
   <lastmod>2018-01-20T01:40:00Z</lastmod>
- </url>
- <url>
-  <loc>http://www.frankliu.org/categories/org-mode/</loc>
-  <lastmod>2018-01-20T01:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.frankliu.org/categories/vim/</loc>
@@ -52,5 +48,9 @@
  <url>
   <loc>http://www.frankliu.org/posts/vimgolf-one-number-per-line/</loc>
   <lastmod>2018-01-18T19:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.frankliu.org/posts/vimgolf-simple-practical-and-common/</loc>
+  <lastmod>2018-01-20T02:30:00Z</lastmod>
  </url>
 </urlset>

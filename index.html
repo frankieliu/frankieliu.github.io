@@ -10,7 +10,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="http://www.frankliu.org/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/org-mode-image-location/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/vimgolf-simple-practical-and-common/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -63,7 +63,143 @@
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/org-mode-image-location/" class="u-url">org-mode image location</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/vimgolf-simple-practical-and-common/" class="u-url">vimgolf: Simple, Practical, and Common</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Frankie Liu
+            </span></p>
+            <p class="dateline"><a href="posts/vimgolf-simple-practical-and-common/" rel="bookmark"><time class="published dt-published" datetime="2018-01-19T18:30:17-08:00" title="2018-01-19 18:30">2018-01-19 18:30</time></a></p>
+                <p class="commentline">
+        
+    <a href="posts/vimgolf-simple-practical-and-common/#disqus_thread" data-disqus-identifier="cache/posts/vimgolf-simple-practical-and-common.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Link</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<a href="http://vimgolf.com/challenges/55b18bbea9c2c30d04000001">vimgolf put 55b18bbea9c2c30d04000001</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Start file</h2>
+<div class="outline-text-2" id="text-2">
+<pre class="example">
+*temp var1 0
+*temp var2 "hi"
+*temp var3 -1
+*temp var4 42
+*temp var5 "asdf"
+*temp var6 0
+
+Simple things we do all the time should be able to be done with very few keystrokes, but sometimes I find something I need to do makes me go, "There MUST be a better way."
+
+This challenge is just a simple movement and entering text at a certain place.
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">End file</h2>
+<div class="outline-text-2" id="text-3">
+<pre class="example">
+*temp var1 0
+*temp var2 "hi"
+*temp var3 -1
+*temp var4 42
+*temp var5 "asdf"
+*temp var6 0
+*temp var7 11
+
+Simple things we do all the time should be able to be done with very few keystrokes, but sometimes I find something I need to do makes me go, "There MUST be a better way."
+
+New text.
+
+This challenge is just a simple movement and entering text at a certain place.
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Solution</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+6GYp&lt;C-A&gt;w11&lt;C-A&gt;GONew t&lt;C-N&gt;&lt;C-N&gt;.&lt;CR&gt;&lt;Esc&gt;ZZ
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">Moving down</h2>
+<div class="outline-text-2" id="text-5">
+<dl class="org-dl">
+<dt> 5j </dt>
+<dd>moving down to line var6
+</dd>
+<dt> 6G </dt>
+<dd>Go to line 6
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">Copying and pasting</h2>
+<div class="outline-text-2" id="text-6">
+<dl class="org-dl">
+<dt> Yp </dt>
+<dd>yank line and put
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">Increase count</h2>
+<div class="outline-text-2" id="text-7">
+<dl class="org-dl">
+<dt> CTRL-A </dt>
+<dd>increase 6 to 7
+</dd>
+<dt> w </dt>
+<dd>move to next word
+</dd>
+<dt> [count]CTRL-A </dt>
+<dd>increase by count [count], in this case count = 11
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8">Move to end</h2>
+<div class="outline-text-2" id="text-8">
+<dl class="org-dl">
+<dt> GO </dt>
+<dd>Go to end and Open a line above
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9">Start typing</h2>
+<div class="outline-text-2" id="text-9">
+<dl class="org-dl">
+<dt> New t&lt;C-N&gt;&lt;C-N&gt;.&lt;CR&gt; </dt>
+<dd>this has the interesting effect of
+searching forward for the words beginning with t.
+</dd>
+</dl>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/org-mode-image-location/" class="u-url">org-mode image location</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Frankie Liu
@@ -113,13 +249,15 @@ directory.
 </p>
 
 <p>
-Adding a symbolic link in the <code>source</code> branch, is useful.
+Adding a symbolic link in the <code>source</code> branch allows one to visit the
+link in org-mode, while at the same time point to the correct output
+directory.
 </p>
 
-<div class="highlight"><pre><span></span>cd $nikola_root
+<div class="highlight"><pre><span></span><span class="nb">cd</span> <span class="nv">$nikola_root</span>
 mkdir -p files/images/org-mode
-# move cannon_js.png into this directory
-ln -s $(pwd)/files/images ../images
+<span class="c1"># move cannon_js.png into this directory</span>
+ln -s <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/files/images ../images
 </pre></div>
     </div>
     </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/git-head-and-branches/" class="u-url">git head and branches</a></h1>
@@ -384,21 +522,17 @@ branch.$(git rev-parge –abbrev-ref HEAD).remote)/$(git rev-parse –abrev-ref 
 </div>
     </header><div class="e-content entry-content">
     <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1">Solutions common patterns</h2>
+<h2 id="sec-1">Link</h2>
 <div class="outline-text-2" id="text-1">
-</div>
-<div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1">Link</h3>
-<div class="outline-text-3" id="text-1-1">
 <p>
-vimgolf put 56fb2e75ccffcc0009026473
+<a href="http://vimgolf.com/challenges/56fb2e75ccffcc0009026473">vimgolf put 56fb2e75ccffcc0009026473</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-sec-1-2" class="outline-3">
-<h3 id="sec-1-2">Start file</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Start file</h2>
+<div class="outline-text-2" id="text-2">
 <pre class="example">
 - One number per line -
 -----------------------
@@ -409,9 +543,9 @@ vimgolf put 56fb2e75ccffcc0009026473
 </div>
 </div>
 
-<div id="outline-container-sec-1-3" class="outline-3">
-<h3 id="sec-1-3">End file</h3>
-<div class="outline-text-3" id="text-1-3">
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">End file</h2>
+<div class="outline-text-2" id="text-3">
 <pre class="example">
 2
 3
@@ -427,9 +561,9 @@ vimgolf put 56fb2e75ccffcc0009026473
 </div>
 </div>
 
-<div id="outline-container-sec-1-4" class="outline-3">
-<h3 id="sec-1-4">Deleting the first two lines</h3>
-<div class="outline-text-3" id="text-1-4">
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Deleting the first two lines</h2>
+<div class="outline-text-2" id="text-4">
 <ol class="org-ol">
 <li>dj : d{motion} delete, j moves down one line
 </li>
@@ -440,9 +574,9 @@ and [count]-1 more lines
 </div>
 </div>
 
-<div id="outline-container-sec-1-5" class="outline-3">
-<h3 id="sec-1-5">Joining the lines</h3>
-<div class="outline-text-3" id="text-1-5">
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">Joining the lines</h2>
+<div class="outline-text-2" id="text-5">
 <ol class="org-ol">
 <li>JxJx : Join and delete the extra character twice
 </li>
@@ -456,9 +590,9 @@ and [count]-1 more lines
 </div>
 </div>
 
-<div id="outline-container-sec-1-6" class="outline-3">
-<h3 id="sec-1-6">Replacement</h3>
-<div class="outline-text-3" id="text-1-6">
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">Replacement</h2>
+<div class="outline-text-2" id="text-6">
 <ol class="org-ol">
 <li>:s/,/\r/g              : sed like replacement
 </li>
@@ -486,9 +620,9 @@ the cursor of the selected text
 </div>
 </div>
 
-<div id="outline-container-sec-1-7" class="outline-3">
-<h3 id="sec-1-7">Comments in vimgolf:</h3>
-<div class="outline-text-3" id="text-1-7">
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">Comments in vimgolf:</h2>
+<div class="outline-text-2" id="text-7">
 <p>
 jdupont655: @chunleng: &lt;C-R&gt;&lt;C-A&gt; is one of several ways to
 automatically insert some text on the command line, when this text is
@@ -522,9 +656,9 @@ you ask to put a list, Vim puts each of its item on a separate line.
 </div>
 </div>
 
-<div id="outline-container-sec-1-8" class="outline-3">
-<h3 id="sec-1-8">References:</h3>
-<div class="outline-text-3" id="text-1-8">
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8">References:</h2>
+<div class="outline-text-2" id="text-8">
 <ul class="org-ul">
 <li>"= : <a href="http://vimdoc.sourceforge.net/htmldoc/change.html#quote=">vimdoc</a>
 </li>
@@ -541,7 +675,6 @@ you ask to put a list, Vim puts each of its item on a separate line.
 <a href="http://vimdoc.sourceforge.net/htmldoc/insert.html#i_CTRL-R">:h i<sub>Ctrl</sub>-R</a>
 </li>
 </ul>
-</div>
 </div>
 </div>
     </div>
