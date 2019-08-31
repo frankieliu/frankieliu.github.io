@@ -1,5 +1,5 @@
 'render_pages:output/posts/a-post/index.html', (0, 5262)
-'sitemap:output/sitemap.xml', (86528, 1555)
+'sitemap:output/sitemap.xml', (86528, 1557)
 'copy_assets:output/assets/xml/atom.xsl', (7168, 395)
 'redirect', (7680, 56)
 'sitemap:output/sitemapindex.xml', (8192, 255)

@@ -61,9 +61,12 @@ add a field in the preamble, =has_math: true=
 it shoud work out of the box
 
 * deploying on github.io
-I chose to name the source branch "source" (it is "src" by default)
-For this you need to change the lines
-GITHUB_SOURCE_BRANCH = 'source'
+# I chose to name the source branch "source" (it is "src" by default)
+# For this you need to change the lines
+# GITHUB_SOURCE_BRANCH = 'source'
+
+By default nikola works off from the src branch and output goes to the master
+branch.
 
 Also you need to add the following under files/CNAME:
 www.frankliu.org
