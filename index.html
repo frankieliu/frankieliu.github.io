@@ -183,27 +183,38 @@ it shoud work out of the box
 <h2 id="sec-6">deploying on github.io</h2>
 <div class="outline-text-2" id="text-6">
 <p>
-By default nikola works off from the src branch and output goes to the master
+By default nikola works off from the <code>src</code> branch and output goes to the <code>master</code>
 branch.
 </p>
 
 <p>
-Also you need to add the following under files/CNAME:
-www.frankliu.org
+Also you need to add the following under <code>files/CNAME</code>:
 </p>
 
 <p>
-Since this is the name from the domain provider and the one that github.io
-was configured with, under settings for this repository, you can set the custom
-domain field to 'www.frankliu.org'
+<code>www.frankliu.org</code>
 </p>
 
 <p>
-Finally from nikola in the 'source' branch you can:
-nikola github<sub>deploy</sub></p>
+This is the name from the domain provider.  Also configure the repository
+settings: go under settings, and modify the <code>custom domain</code> field to
+</p>
 
 <p>
-This will create a new branch 'master' where the generated pages will reside.
+<code>www.frankliu.org</code>.
+</p>
+
+<p>
+Finally from nikola in the <code>src</code> branch you can:
+</p>
+
+<p>
+<code>nikola github_deploy</code>
+</p>
+
+<p>
+This will create a new/or modify the existing branch <code>master</code> where the
+generated pages will reside.
 </p>
 </div>
 </div>
