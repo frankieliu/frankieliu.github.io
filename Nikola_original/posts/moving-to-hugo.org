@@ -1,0 +1,14 @@
+#+BEGIN_COMMENT
+.. title: Moving to Hugo
+.. slug: moving-to-hugo
+.. date: 2019-08-30 12:30:13 UTC-07:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+
+#+END_COMMENT
+
+I am switching over to Hugo.  So you can use this post to jump to my hugo site:
+[[http://frankliu.org/Hugo]]

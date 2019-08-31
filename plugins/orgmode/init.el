@@ -57,7 +57,6 @@
 (defconst org-pygments-language-alist
   '(("asymptote" . "asymptote")
     ("awk" . "awk")
-    ("bash" . "bash")
     ("c" . "c")
     ("c++" . "cpp")
     ("cpp" . "cpp")

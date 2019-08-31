@@ -1,0 +1,61 @@
+#+BEGIN_COMMENT
+.. title: setting up nikola / org-mode
+.. slug: setting-up-nikola-org-mode
+.. date: 2019-08-30 13:18:43 UTC-07:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+
+#+END_COMMENT
+
+# -*- mode: org -*-
+#+STARTUP: indent hidestars showall
+
+* installing nikola
+#+begin_src bash
+  conda activate
+  pip install Nikola[extras]
+  nikola version
+#+end_src
+
+* get a site up and running
+#+begin_src bash
+  nikola init mysite
+  cd mysite
+  nikola new_post
+  nikola build
+  nikola serve -b
+  # nikola auto --browser
+#+end_src
+
+* adding org support
+#+begin_src bash
+  nikola new_post -F
+  nikola plugin -i orgmode
+  emacs conf.py
+  echo <<EOF
+  # add the following lines
+
+  Contents of the conf.py.sample file:
+
+  # NOTE: Needs additional configuration in init.el file.
+
+  # Add the orgmode compiler to your COMPILERS dict.
+  COMPILERS["orgmode"] = ('.org',)
+
+  # Add org files to your POSTS, PAGES
+  POSTS = POSTS + (("posts/*.org", "posts", "post.tmpl"),)
+  PAGES = PAGES + (("pages/*.org", "pages", "page.tmpl"),)
+  EOF
+  nikola new_post -f orgmode
+  nikola build
+  nikola serve -b
+#+end_src
+
+* adding math support
+add a field in the preamble, =has_math: true=
+
+* adding code
+it shoud work out of the box
