@@ -7,50 +7,42 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://www.frankliu.org/</loc>
-  <lastmod>2018-01-19T19:38:00Z</lastmod>
+  <lastmod>2019-08-30T19:39:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.frankliu.org/2018/</loc>
-  <lastmod>2018-01-18T19:52:00Z</lastmod>
+  <loc>http://www.frankliu.org/2019/</loc>
+  <lastmod>2019-08-30T19:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.frankliu.org/archive.html</loc>
-  <lastmod>2018-01-23T07:10:00Z</lastmod>
+  <lastmod>2019-08-31T00:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.frankliu.org/categories/</loc>
-  <lastmod>2018-01-20T02:05:00Z</lastmod>
+  <lastmod>2019-08-30T19:39:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.frankliu.org/categories/git/</loc>
-  <lastmod>2018-01-19T16:32:00Z</lastmod>
+  <loc>http://www.frankliu.org/galleries/</loc>
+  <lastmod>2019-08-30T19:39:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.frankliu.org/categories/mathjax/</loc>
-  <lastmod>2018-01-19T17:14:00Z</lastmod>
+  <loc>http://www.frankliu.org/listings/</loc>
+  <lastmod>2019-08-30T19:39:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.frankliu.org/categories/org-mode-nikola/</loc>
-  <lastmod>2018-01-20T01:40:00Z</lastmod>
+  <loc>http://www.frankliu.org/posts/a-post/</loc>
+  <lastmod>2019-08-30T19:39:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.frankliu.org/categories/vim/</loc>
-  <lastmod>2018-01-18T19:52:00Z</lastmod>
+  <loc>http://www.frankliu.org/posts/org-test/</loc>
+  <lastmod>2019-08-30T20:07:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.frankliu.org/posts/git-head-and-branches/</loc>
-  <lastmod>2018-01-19T16:32:00Z</lastmod>
+  <loc>http://www.frankliu.org/posts/setting-up-nikola-org-mode/</loc>
+  <lastmod>2019-08-30T22:23:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.frankliu.org/posts/org-mode-image-location/</loc>
-  <lastmod>2018-01-20T01:38:00Z</lastmod>
- </url>
- <url>
-  <loc>http://www.frankliu.org/posts/vimgolf-one-number-per-line/</loc>
-  <lastmod>2018-01-18T19:52:00Z</lastmod>
- </url>
- <url>
-  <loc>http://www.frankliu.org/posts/vimgolf-simple-practical-and-common/</loc>
-  <lastmod>2018-01-20T02:30:00Z</lastmod>
+  <loc>http://www.frankliu.org/posts/to-hugo-site/</loc>
+  <lastmod>2019-08-30T22:37:00Z</lastmod>
  </url>
 </urlset>

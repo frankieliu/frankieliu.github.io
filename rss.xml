@@ -1,503 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Frankie Liu Pages</title><link>http://www.frankliu.org/</link><description>Nikola/Org</description><atom:link href="http://www.frankliu.org/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:frankie.y.liu@gmail.com"&gt;Frankie Liu&lt;/a&gt; </copyright><lastBuildDate>Tue, 23 Jan 2018 07:10:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>vimgolf: Simple, Practical, and Common</title><link>http://www.frankliu.org/posts/vimgolf-simple-practical-and-common/</link><dc:creator>Frankie Liu</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;Link&lt;/h2&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Frankie Liu Pages</title><link>http://www.frankliu.org/</link><description>Nikola/Org</description><atom:link href="http://www.frankliu.org/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:frankie.y.liu@gmail.com"&gt;Frankie Liu&lt;/a&gt; </copyright><lastBuildDate>Sat, 31 Aug 2019 00:52:52 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>to hugo site</title><link>http://www.frankliu.org/posts/to-hugo-site/</link><dc:creator>Frankie Liu</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;link to hugo site&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
-&lt;a href="http://vimgolf.com/challenges/55b18bbea9c2c30d04000001"&gt;vimgolf put 55b18bbea9c2c30d04000001&lt;/a&gt;
+This site contains legacy code please follow through to this hugo site:
+&lt;a href="http://frankliu.org/hugo"&gt;my hugo ssg&lt;/a&gt;
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;Start file&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
-&lt;pre class="example"&gt;
-*temp var1 0
-*temp var2 "hi"
-*temp var3 -1
-*temp var4 42
-*temp var5 "asdf"
-*temp var6 0
-
-Simple things we do all the time should be able to be done with very few keystrokes, but sometimes I find something I need to do makes me go, "There MUST be a better way."
-
-This challenge is just a simple movement and entering text at a certain place.
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-3" class="outline-2"&gt;
-&lt;h2 id="sec-3"&gt;End file&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-3"&gt;
-&lt;pre class="example"&gt;
-*temp var1 0
-*temp var2 "hi"
-*temp var3 -1
-*temp var4 42
-*temp var5 "asdf"
-*temp var6 0
-*temp var7 11
-
-Simple things we do all the time should be able to be done with very few keystrokes, but sometimes I find something I need to do makes me go, "There MUST be a better way."
-
-New text.
-
-This challenge is just a simple movement and entering text at a certain place.
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-4" class="outline-2"&gt;
-&lt;h2 id="sec-4"&gt;Solution&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-4"&gt;
-&lt;p&gt;
-6GYp&amp;lt;C-A&amp;gt;w11&amp;lt;C-A&amp;gt;GONew t&amp;lt;C-N&amp;gt;&amp;lt;C-N&amp;gt;.&amp;lt;CR&amp;gt;&amp;lt;Esc&amp;gt;ZZ
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-5" class="outline-2"&gt;
-&lt;h2 id="sec-5"&gt;Moving down&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-5"&gt;
-&lt;dl class="org-dl"&gt;
-&lt;dt&gt; 5j &lt;/dt&gt;&lt;dd&gt;moving down to line var6
-&lt;/dd&gt;
-&lt;dt&gt; 6G &lt;/dt&gt;&lt;dd&gt;Go to line 6
-&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-6" class="outline-2"&gt;
-&lt;h2 id="sec-6"&gt;Copying and pasting&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-6"&gt;
-&lt;dl class="org-dl"&gt;
-&lt;dt&gt; Yp &lt;/dt&gt;&lt;dd&gt;yank line and put
-&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-7" class="outline-2"&gt;
-&lt;h2 id="sec-7"&gt;Increase count&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-7"&gt;
-&lt;dl class="org-dl"&gt;
-&lt;dt&gt; CTRL-A &lt;/dt&gt;&lt;dd&gt;increase 6 to 7
-&lt;/dd&gt;
-&lt;dt&gt; w &lt;/dt&gt;&lt;dd&gt;move to next word
-&lt;/dd&gt;
-&lt;dt&gt; [count]CTRL-A &lt;/dt&gt;&lt;dd&gt;increase by count [count], in this case count = 11
-&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-8" class="outline-2"&gt;
-&lt;h2 id="sec-8"&gt;Move to end&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-8"&gt;
-&lt;dl class="org-dl"&gt;
-&lt;dt&gt; GO &lt;/dt&gt;&lt;dd&gt;Go to end and Open a line above
-&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-9" class="outline-2"&gt;
-&lt;h2 id="sec-9"&gt;Start typing&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-9"&gt;
-&lt;dl class="org-dl"&gt;
-&lt;dt&gt; New t&amp;lt;C-N&amp;gt;&amp;lt;C-N&amp;gt;.&amp;lt;CR&amp;gt; &lt;/dt&gt;&lt;dd&gt;this has the interesting effect of
-searching forward for the words beginning with t.
-&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>vim</category><guid>http://www.frankliu.org/posts/vimgolf-simple-practical-and-common/</guid><pubDate>Sat, 20 Jan 2018 02:30:17 GMT</pubDate></item><item><title>org-mode image location</title><link>http://www.frankliu.org/posts/org-mode-image-location/</link><dc:creator>Frankie Liu</dc:creator><description>&lt;p&gt;
-I did not like the limited options offered by the orgmode plugin that
-came with nikola.  It suggests using &lt;code&gt;img-url:&lt;/code&gt; link which does not
-allow me to add &lt;code&gt;ATTR_HTML&lt;/code&gt; or a &lt;code&gt;CAPTION&lt;/code&gt; that comes nicely with
-&lt;code&gt;org-export&lt;/code&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-Let's add an image here: 
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://www.frankliu.org/images/org-mode/cannon_js.png" alt="cat/spider image" title="Action!" align="center" width="200"&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;span class="figure-number"&gt;Figure 1:&lt;/span&gt; Image from cannon.js&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-This was added as
-&lt;/p&gt;
-
-&lt;pre class="example"&gt;
-#+CAPTION: Image from cannon.js
-#+ATTR_HTML: :alt cat/spider image :title Action! :align center :width 200
-[[../../images/org-mode/cannon_js.png]]
-&lt;/pre&gt;
-
-&lt;p&gt;
-Now, we also create a symbolic link to &lt;code&gt;files/images&lt;/code&gt; in order to
-point the final location of the &lt;code&gt;images/&lt;/code&gt; directory that should be
-added to &lt;code&gt;files/&lt;/code&gt; directory.  The &lt;code&gt;images/&lt;/code&gt; final output location will
-be at &lt;code&gt;/&lt;/code&gt; which is located two back references from the &lt;code&gt;posts&lt;/code&gt;
-directory.
-&lt;/p&gt;
-
-&lt;p&gt;
-Adding a symbolic link in the &lt;code&gt;source&lt;/code&gt; branch allows one to visit the
-link in org-mode, while at the same time point to the correct output
-directory.
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="nv"&gt;$nikola_root&lt;/span&gt;
-mkdir -p files/images/org-mode
-&lt;span class="c1"&gt;# move cannon_js.png into this directory&lt;/span&gt;
-ln -s &lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;/files/images ../images
-&lt;/pre&gt;&lt;/div&gt;</description><category>org-mode nikola</category><guid>http://www.frankliu.org/posts/org-mode-image-location/</guid><pubDate>Sat, 20 Jan 2018 01:38:47 GMT</pubDate></item><item><title>git head and branches</title><link>http://www.frankliu.org/posts/git-head-and-branches/</link><dc:creator>Frankie Liu</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;code&gt;origin&lt;/code&gt; is a local alias to a remote repository&lt;/h2&gt;
+&lt;/div&gt;</description><guid>http://www.frankliu.org/posts/to-hugo-site/</guid><pubDate>Fri, 30 Aug 2019 22:29:34 GMT</pubDate></item><item><title>setting up nikola / org-mode</title><link>http://www.frankliu.org/posts/setting-up-nikola-org-mode/</link><dc:creator>Frankie Liu</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;installing nikola&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;&lt;code&gt;git push [origin|&amp;lt;URL&amp;gt;] &amp;lt;branch&amp;gt;&lt;/code&gt; pushes changes to a particular
-remote repository
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git remote&lt;/code&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git remote -v&lt;/code&gt; find out information about remote
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git remote show origin&lt;/code&gt; shows the origin
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git remote add origin &amp;lt;URL&amp;gt;&lt;/code&gt; sets an origin
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git remote rename origin &amp;lt;new_name&amp;gt;&lt;/code&gt; renames the origin
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;&lt;code&gt;HEAD&lt;/code&gt; &lt;code&gt;@&lt;/code&gt; is a pointer to a branch&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;&lt;img src="http://www.frankliu.org/images/git/git-graph.svg" alt="Difference between carot and tilde"&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;
-Image from &lt;a href="http://www.paulboxley.com/blog/2011/06/git-caret-and-tilde"&gt;paulboxley&lt;/a&gt;.
-&lt;/p&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;The &lt;code&gt;@&lt;/code&gt; at-sign without leading branch/reference is the same as &lt;code&gt;HEAD&lt;/code&gt;.
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-3" class="outline-2"&gt;
-&lt;h2 id="sec-3"&gt;&lt;code&gt;branch&lt;/code&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-3"&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;&lt;code&gt;git branch &amp;lt;branch name&amp;gt;&lt;/code&gt; create a branch
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git checkout &amp;lt;branch name&amp;gt;&lt;/code&gt; move HEAD to that branch
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git checkout -b &amp;lt;branch name&amp;gt;&lt;/code&gt; create branch and move HEAD to it
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git checkout master&lt;/code&gt; return to the master branch
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git merge &amp;lt;branch name&amp;gt;&lt;/code&gt; merges checked out branch (typically
-master) with another branch
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git branch -d &amp;lt;branch name&amp;gt;&lt;/code&gt; removes a branch
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git mergetool&lt;/code&gt; optional tool to visually merge
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git branch -a&lt;/code&gt; show all branches
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git branch -v&lt;/code&gt; see last commit
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git branch -vv&lt;/code&gt; see tracking information
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git branch --no-merged&lt;/code&gt; see the branches that have not merged
-with checked out branch (typically master)
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git diff origin/master..master&lt;/code&gt; show differences between local
-master and origin's master
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-4" class="outline-2"&gt;
-&lt;h2 id="sec-4"&gt;Working with remote references&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-4"&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;&lt;code&gt;git ls-remote&lt;/code&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git ls-remote origin master&lt;/code&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git fetch origin&lt;/code&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git remote add &amp;lt;remote_name&amp;gt;&lt;/code&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git fetch &amp;lt;remote_name&amp;gt;&lt;/code&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git push origin &amp;lt;branch_name&amp;gt;&lt;/code&gt; shortcut for
-&lt;code&gt;git push origin &amp;lt;bn&amp;gt;:&amp;lt;bn&amp;gt;&lt;/code&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git merge origin/&amp;lt;bn&amp;gt;&lt;/code&gt; merges current working branch
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git checkout -b &amp;lt;bn&amp;gt; origin/&amp;lt;bn&amp;gt;&lt;/code&gt; create local branch &lt;code&gt;&amp;lt;bn&amp;gt;&lt;/code&gt; based
-off &lt;code&gt;origin/&amp;lt;bn&amp;gt;&lt;/code&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git checkout --track origin/&amp;lt;bn&amp;gt;&lt;/code&gt; shorthand for the above
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git checkout &amp;lt;bn&amp;gt;&lt;/code&gt; shorthand for the above if &lt;code&gt;&amp;lt;bn&amp;gt;&lt;/code&gt; exists on origin
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git push origin --delete &amp;lt;bn&amp;gt;&lt;/code&gt; delete a remote branch
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-5" class="outline-2"&gt;
-&lt;h2 id="sec-5"&gt;Workflow&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-5"&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;&lt;code&gt;git checkout -b &amp;lt;myworkingbranch&amp;gt; --track origin/master&lt;/code&gt; create a
-local branch
-&lt;/li&gt;
-&lt;li&gt;~git config –global alias.nb "!git checkout –track $(git config
-branch.$(git rev-parge –abbrev-ref HEAD).remote)/$(git rev-parse –abrev-ref HEAD) -b"~
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git nb foobar&lt;/code&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://hub.github.com/"&gt;hub&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-6" class="outline-2"&gt;
-&lt;h2 id="sec-6"&gt;&lt;code&gt;alias&lt;/code&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-6"&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;Set an alias for an alias command
-&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git config --global alias.alias "config --get-regexp ^alias\."
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;&lt;code&gt;git alias&lt;/code&gt; : use the alias command
-&lt;/li&gt;
-
-&lt;li&gt;Set an alias for alog
-&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git config --global alias.alog "log --graph --oneline --all --decorate"
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;conda activate
+pip install Nikola[extras]
+nikola version
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-sec-7" class="outline-2"&gt;
-&lt;h2 id="sec-7"&gt;Unstaging&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-7"&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;Suppose you did the following &lt;code&gt;git add -A&lt;/code&gt;, i.e. added all modifications
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git reset HEAD &amp;lt;file&amp;gt;&lt;/code&gt; you can unstage them individually
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git reset&lt;/code&gt; or unstage all the modifications
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-8" class="outline-2"&gt;
-&lt;h2 id="sec-8"&gt;Undoing things&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-8"&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;&lt;a href="https://sethrobertson.github.io/GitFixUm/fixup.html"&gt;fix human errors&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;~git commit -m "some typo"~ want to undo this commit
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git reset HEAD~&lt;/code&gt; unstages your commit
-&lt;/li&gt;
-&lt;li&gt;make corrections
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git add ...&lt;/code&gt; stage them
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git commit -c ORIG_HEAD&lt;/code&gt; allows you to edit the old commit message
-&lt;code&gt;ORIG_HEAD&lt;/code&gt; is the original head
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git revert HEAD&lt;/code&gt; undoes a public commit
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/927358/how-to-undo-the-most-recent-commits-in-git?page=1&amp;amp;tab=votes#tab-top"&gt;nice read&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/1223354/undo-git-pull-how-to-bring-repos-to-old-state"&gt;another stackoverflow&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-9" class="outline-2"&gt;
-&lt;h2 id="sec-9"&gt;&lt;a href="https://github.com/tj/git-extras"&gt;git-extras&lt;/a&gt;&lt;/h2&gt;
-&lt;/div&gt;</description><category>git</category><category>mathjax</category><guid>http://www.frankliu.org/posts/git-head-and-branches/</guid><pubDate>Fri, 19 Jan 2018 16:11:56 GMT</pubDate></item><item><title>vimgolf: One number per line</title><link>http://www.frankliu.org/posts/vimgolf-one-number-per-line/</link><dc:creator>Frankie Liu</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;Link&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-&lt;a href="http://vimgolf.com/challenges/56fb2e75ccffcc0009026473"&gt;vimgolf put 56fb2e75ccffcc0009026473&lt;/a&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
 &lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;Start file&lt;/h2&gt;
+&lt;h2 id="sec-2"&gt;get a site up and running&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-2"&gt;
-&lt;pre class="example"&gt;
-- One number per line -
------------------------
-2,3,5,7,
-11,13,17,
-19,23,29,
-&lt;/pre&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;nikola init mysite
+cd mysite
+nikola new_post
+nikola build
+nikola serve -b
+# nikola auto --browser
+&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div id="outline-container-sec-3" class="outline-2"&gt;
-&lt;h2 id="sec-3"&gt;End file&lt;/h2&gt;
+&lt;h2 id="sec-3"&gt;adding org support&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-3"&gt;
-&lt;pre class="example"&gt;
-2
-3
-5
-7
-11
-13
-17
-19
-23
-29
-&lt;/pre&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;nikola new_post -F
+nikola plugin -i orgmode
+emacs conf.py
+echo &amp;lt;&amp;lt;EOF
+# add the following lines
+
+Contents of the conf.py.sample file:
+
+# NOTE: Needs additional configuration in init.el file.
+
+# Add the orgmode compiler to your COMPILERS dict.
+COMPILERS["orgmode"] = ('.org',)
+
+# Add org files to your POSTS, PAGES
+POSTS = POSTS + (("posts/*.org", "posts", "post.tmpl"),)
+PAGES = PAGES + (("pages/*.org", "pages", "page.tmpl"),)
+EOF
+nikola new_post -f orgmode
+nikola build
+nikola serve -b
+&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div id="outline-container-sec-4" class="outline-2"&gt;
-&lt;h2 id="sec-4"&gt;Deleting the first two lines&lt;/h2&gt;
+&lt;h2 id="sec-4"&gt;adding math support&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-4"&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;dj : d{motion} delete, j moves down one line
-&lt;/li&gt;
-&lt;li&gt;2D : D delete the character under the cursor until the end of line
-and [count]-1 more lines
-&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;
+add a field in the preamble, &lt;code&gt;has_math: true&lt;/code&gt;
+&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div id="outline-container-sec-5" class="outline-2"&gt;
-&lt;h2 id="sec-5"&gt;Joining the lines&lt;/h2&gt;
+&lt;h2 id="sec-5"&gt;adding code&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-5"&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;JxJx : Join and delete the extra character twice
-&lt;/li&gt;
-&lt;li&gt;3J   : Joins three lines together
-&lt;/li&gt;
-&lt;li&gt;JJ   : Joins two lines together
-&lt;/li&gt;
-&lt;li&gt;3gJ  : Same as 2, but doesn't remove indent or spaces
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-6" class="outline-2"&gt;
-&lt;h2 id="sec-6"&gt;Replacement&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-6"&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;:s/,/\r/g              : sed like replacement
-&lt;/li&gt;
-&lt;li&gt;:s/,/&amp;lt;C-V&amp;gt;&amp;lt;CR&amp;gt;/g&amp;lt;CR&amp;gt;   : same as above but inserts a control character
-&lt;/li&gt;
-&lt;li&gt;0qqwr&amp;lt;CR&amp;gt;q9@q          : goes to first char in line
-record typed characters into register 'q'
-wr: macro does a word movement and a char replacement
-9@q : execute the contents of 'q' 9 times
-&lt;/li&gt;
-&lt;li&gt;Iwr&amp;lt;CR&amp;gt;&amp;lt;Esc&amp;gt;u9@.       : similar to the one above but goes to
-current register
-&lt;/li&gt;
-&lt;li&gt;V"=[&amp;lt;C-R&amp;gt;&amp;lt;C-A&amp;gt;]&amp;lt;CR&amp;gt;p   : V : visual line
-"= expression register
-[ ] list
-&amp;lt;C-R&amp;gt; cursor moves to the command-line
-&amp;lt;C-A&amp;gt; this normally adds to the number at
-the cursor, not sure what this C-A does
-p : put command
-&amp;lt;C-R&amp;gt;&amp;lt;C-A&amp;gt; seems to get the word at
-the cursor of the selected text
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-7" class="outline-2"&gt;
-&lt;h2 id="sec-7"&gt;Comments in vimgolf:&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-7"&gt;
 &lt;p&gt;
-jdupont655: @chunleng: &amp;lt;C-R&amp;gt;&amp;lt;C-A&amp;gt; is one of several ways to
-automatically insert some text on the command line, when this text is
-already under the cursor in the buffer.
+it shoud work out of the box
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><guid>http://www.frankliu.org/posts/setting-up-nikola-org-mode/</guid><pubDate>Fri, 30 Aug 2019 20:18:43 GMT</pubDate></item><item><title>org test</title><link>http://www.frankliu.org/posts/org-test/</link><dc:creator>Frankie Liu</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;This is a test&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Let's try some equations
 &lt;/p&gt;
 
 &lt;p&gt;
-Depending on type of text, you can hit different mappings:
+\(x\)
 &lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&amp;lt;C-R&amp;gt;&amp;lt;C-W&amp;gt; for a word,
-&lt;/li&gt;
-&lt;li&gt;&amp;lt;C-R&amp;gt;&amp;lt;C-A&amp;gt; for a WORD,
-&lt;/li&gt;
-&lt;li&gt;&amp;lt;C-R&amp;gt;&amp;lt;C-F&amp;gt; for a filepath,
-&lt;/li&gt;
-&lt;li&gt;&amp;lt;C-R&amp;gt;&amp;lt;C-P&amp;gt; for an expanded filepath.
-&lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;p&gt;
-Here, when you hit &amp;lt;C-R&amp;gt;&amp;lt;C-A&amp;gt;, your cursor is on one of the digits, so
-the WORD under the cursor is ——…2,…,29,. Besides, the number
-of minus signs in front of the number 2 is even (24; 1 at the end of
-the first line, then 23 on the second one). So, -—…2 evaluates to
-the positive number 2. Finally, you replace the line by putting the
-evaluation of an expression given through the expression register
-("={expr}p). Here, the expression is a list ([2, …, 29]), and when
-you ask to put a list, Vim puts each of its item on a separate line.
+\(x+y = z\)
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
-&lt;div id="outline-container-sec-8" class="outline-2"&gt;
-&lt;h2 id="sec-8"&gt;References:&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-8"&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;"= : &lt;a href="http://vimdoc.sourceforge.net/htmldoc/change.html#quote="&gt;vimdoc&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/1276403/simple-vim-commands-you-wish-youd-known-earlier"&gt;useful Potpourri&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/1497958/how-do-i-use-vim-registers"&gt;Registers&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://books.google.com/books?id=wx5O0JLesi0C&amp;amp;pg=PT183&amp;amp;lpg=PT183&amp;amp;dq=vim+the+equal+register&amp;amp;source=bl&amp;amp;ots=vWwaLy30rd&amp;amp;sig=3fOvxidlUFgcby7_9WGxkCE9MY8&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ved=0ahUKEwiW2qDEkeLYAhVC-mMKHfflA944ChDoAQgnMAA#v=onepage&amp;amp;q=vim%20the%20equal%20register&amp;amp;f=false"&gt;Expression register&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://vimdoc.sourceforge.net/htmldoc/insert.html#i_CTRL-R"&gt;:h i&lt;sub&gt;Ctrl&lt;/sub&gt;-R&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;Let's try some code block&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Hello"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>vim</category><guid>http://www.frankliu.org/posts/vimgolf-one-number-per-line/</guid><pubDate>Thu, 18 Jan 2018 19:02:17 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><guid>http://www.frankliu.org/posts/org-test/</guid><pubDate>Fri, 30 Aug 2019 20:05:44 GMT</pubDate></item><item><title>A post</title><link>http://www.frankliu.org/posts/a-post/</link><dc:creator>Frankie Liu</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><guid>http://www.frankliu.org/posts/a-post/</guid><pubDate>Fri, 30 Aug 2019 19:39:09 GMT</pubDate></item></channel></rss>

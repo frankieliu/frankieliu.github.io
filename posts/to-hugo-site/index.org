@@ -1,0 +1,17 @@
+#+BEGIN_COMMENT
+.. title: to hugo site
+.. slug: to-hugo-site
+.. date: 2019-08-30 15:29:34 UTC-07:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+
+#+END_COMMENT
+# -*- mode: org -*-
+#+STARTUP: indent hidestars showall
+
+* link to hugo site
+This site contains legacy code please follow through to this hugo site:
+[[http://frankliu.org/hugo][my hugo ssg]]

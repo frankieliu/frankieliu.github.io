@@ -1,0 +1,26 @@
+#+BEGIN_COMMENT
+.. title: org test
+.. slug: org-test
+.. date: 2019-08-30 13:05:44 UTC-07:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+.. has_math: true
+#+END_COMMENT
+
+# -*- mode: org -*-
+#+STARTUP: indent hidestars showall
+
+* This is a test
+Let's try some equations
+
+$x$
+
+$x+y = z$
+* Let's try some code block
+#+begin_src python
+  def main():
+      print("Hello")
+#+end_src
