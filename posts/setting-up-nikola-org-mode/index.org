@@ -59,3 +59,20 @@ add a field in the preamble, =has_math: true=
 
 * adding code
 it shoud work out of the box
+
+* deploying on github.io
+I chose to name the source branch "source" (it is "src" by default)
+For this you need to change the lines
+GITHUB_SOURCE_BRANCH = 'source'
+
+Also you need to add the following under files/CNAME:
+www.frankliu.org
+
+Since this is the name from the domain provider and the one that github.io
+was configured with, under settings for this repository, you can set the custom
+domain field to 'www.frankliu.org'
+
+Finally from nikola in the 'source' branch you can:
+nikola github_deploy
+
+This will create a new branch 'master' where the generated pages will reside.

@@ -6,15 +6,11 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>http://www.frankliu.org/galleries/rss.xml</loc>
-  <lastmod>2019-08-31T00:52:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://www.frankliu.org/rss.xml</loc>
   <lastmod>2019-08-31T00:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.frankliu.org/sitemap.xml</loc>
-  <lastmod>2019-08-31T00:52:00Z</lastmod>
+  <lastmod>2019-08-31T01:49:00Z</lastmod>
  </sitemap>
 </sitemapindex>

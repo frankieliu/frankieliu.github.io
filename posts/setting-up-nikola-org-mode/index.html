@@ -182,6 +182,36 @@ it shoud work out of the box
 </p>
 </div>
 </div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">deploying on github.io</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+I chose to name the source branch "source" (it is "src" by default)
+For this you need to change the lines
+GITHUB<sub>SOURCE</sub><sub>BRANCH</sub> = 'source'
+</p>
+
+<p>
+Also you need to add the following under files/CNAME:
+www.frankliu.org
+</p>
+
+<p>
+Since this is the name from the domain provider and the one that github.io
+was configured with, under settings for this repository, you can set the custom
+domain field to 'www.frankliu.org'
+</p>
+
+<p>
+Finally from nikola in the 'source' branch you can:
+nikola github<sub>deploy</sub></p>
+
+<p>
+This will create a new branch 'master' where the generated pages will reside.
+</p>
+</div>
+</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
