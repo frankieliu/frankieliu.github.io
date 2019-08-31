@@ -65,17 +65,21 @@ it shoud work out of the box
 # For this you need to change the lines
 # GITHUB_SOURCE_BRANCH = 'source'
 
-By default nikola works off from the src branch and output goes to the master
+By default nikola works off from the =src= branch and output goes to the =master=
 branch.
 
-Also you need to add the following under files/CNAME:
-www.frankliu.org
+Also you need to add the following under =files/CNAME=:
 
-Since this is the name from the domain provider and the one that github.io
-was configured with, under settings for this repository, you can set the custom
-domain field to 'www.frankliu.org'
+=www.frankliu.org=
 
-Finally from nikola in the 'source' branch you can:
-nikola github_deploy
+This is the name from the domain provider.  Also configure the repository
+settings: go under settings, and modify the =custom domain= field to
 
-This will create a new branch 'master' where the generated pages will reside.
+=www.frankliu.org=.
+
+Finally from nikola in the =src= branch you can:
+
+=nikola github_deploy=
+
+This will create a new/or modify the existing branch =master= where the
+generated pages will reside.
